@@ -1,125 +1,150 @@
-{
-    TITLE_LABEL: 'Authentication',
-    AUTHENTICATION_METHOD_LABEL: 'Authentication Method',
-    AUTHENTICATION_METHOD_DESCRIPTION_LABEL: 'Select where user and their log in credentials will be managed:',
-    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_JCR: 'You have not completed configuring your external authentication method. You will loose any changes you have made. Do you want to continue?',
-    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_LDAP: 'Switching authentication method will start a new configuration and may change users, roles and login passwords. Are you sure you want to make this change?',
-    AUTHENTICATION_METHOD_CHANGE_FROM_LDAP_TO_JCR: 'Setting the Authentication method to Local will remove your current LDAP security settings. Do you want to proceed?',
-    AUTHENTICATION_METHOD_TITLE: 'Authentication Method Change',
-    PENTAHO: 'Local - Use basic Pentaho authentication',
-    LDAP: 'External - Use LDAP / Active Directory server',
+﻿
+/*!
+ * PENTAHO CORPORATION PROPRIETARY AND CONFIDENTIAL
+ *
+ * Copyright 2002 - 2014 Pentaho Corporation (Pentaho). All rights reserved.
+ *
+ * NOTICE: All information including source code contained herein is, and
+ * remains the sole property of Pentaho and its licensors. The intellectual
+ * and technical concepts contained herein are proprietary and confidential
+ * to, and are trade secrets of Pentaho and may be covered by U.S. and foreign
+ * patents, or patents in process, and are protected by trade secret and
+ * copyright laws. The receipt or possession of this source code and/or related
+ * information does not convey or imply any rights to reproduce, disclose or
+ * distribute its contents, or to manufacture, use, or sell anything that it
+ * may describe, in whole or in part. Any reproduction, modification, distribution,
+ * or public display of this information without the express written authorization
+ * from Pentaho is strictly prohibited and in violation of applicable laws and
+ * international treaties. Access to the source code contained herein is strictly
+ * prohibited to anyone except those individuals and entities who have executed
+ * confidentiality and non-disclosure agreements or other agreements with Pentaho,
+ * explicitly covering such access.
+ */
+
+define({
+    TITLE_LABEL: '認証',
+    AUTHENTICATION_METHOD_LABEL: '認証メソッド',
+    AUTHENTICATION_METHOD_DESCRIPTION_LABEL: 'ユーザーとその資格証明に関するログを管理する場所を選択：',
+    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_JCR: '外部認証メソッドの構成は完了していません。作成した変更は失われます。続行しますか？',
+    AUTHENTICATION_METHOD_CHANGE_FROM_JCR_TO_LDAP: '認証メソッドを切り替えると、新規構成が開始し、ユーザー、ロールおよびログイン パスワードが変更される可能性があります。本当にこれを変更しますか?',
+    AUTHENTICATION_METHOD_CHANGE_FROM_LDAP_TO_JCR: 'ローカルに認証メソッドを設定すると現在の LDAP セキュリティ設定は削除されます。続行しますか?',
+    AUTHENTICATION_METHOD_TITLE: '認証メソッドの変更',
+    PENTAHO: 'ローカル - 基本設定の Pentaho 認証を使用',
+    LDAP: '外部 - LDAP / アクティブ ディレクトリ サーバーを使用',
 
     //ldap server configuration
-    LDAP_CONNECTION_TITLE_LABEL: 'LDAP Server Connection',
-    LDAP_SERVER_URL_LABEL: 'Server URL:',
-    LDAP_USER_LABEL: 'User Name:',
-    LDAP_PASSWORD_LABEL: 'Password:',
-    LDAP_TEST_CONNECTION_LABEL: 'Test connection to proceeed the LDAP setup',
-    LDAP_SERVER_URL_DESCRIPTION: 'The connection URL to use when connecting to the directory server',
-    LDAP_USER_DESCRIPTION: 'Distinguished name of a user with read access to directory',
-    LDAP_PASSWORD_DESCRIPTION: 'The password of the user specified above',
-    LDAP_TEST_SERVER_CONNECTION_LABEL: 'Test Server Connection',
+    LDAP_CONNECTION_TITLE_LABEL: 'LDAP サーバー接続',
+    LDAP_SERVER_URL_LABEL: 'サーバー URL：',
+    LDAP_USER_LABEL: 'ユーザー名:',
+    LDAP_PASSWORD_LABEL: 'パスワード:',
+    LDAP_TEST_CONNECTION_LABEL: 'LDAP セットアップを続行するための接続テスト',
+    LDAP_SERVER_URL_DESCRIPTION: 'ディレクトリ サーバーへ接続する際に使用する接続 URL',
+    LDAP_USER_DESCRIPTION: 'ディレクトリへの読み込みアクセス時のユーザー識別名',
+    LDAP_PASSWORD_DESCRIPTION: '上で指定したユーザーのパスワード',
+    LDAP_TEST_SERVER_CONNECTION_LABEL: 'サーバーの接続テスト',
 
     //ldap administration configuration
-    LDAP_ADMINISTRATOR_TITLE_LABEL: 'Pentaho System Administrator',
-    LDAP_ADMINISTRATOR_USER_LABEL: 'Select user from LDAP server:',
-    LDAP_ADMINISTRATOR_ROLE_LABEL: 'Select role from LDAP server:',
-    LDAP_ADMINISTRATOR_USER_DESCRIPTION: 'Select the user from LDAP server to assign as the Pentaho system administrator',
-    LDAP_ADMINISTRATOR_ROLE_DESCRIPTION: 'Select the role from LDAP server to assign as the Pentaho system administrator',
+    LDAP_ADMINISTRATOR_TITLE_LABEL: 'Pentaho システム管理者',
+    LDAP_ADMINISTRATOR_USER_LABEL: 'LDAP サーバーからユーザーの選択：',
+    LDAP_ADMINISTRATOR_ROLE_LABEL: 'LDAP サーバーからロールの選択：',
+    LDAP_ADMINISTRATOR_USER_DESCRIPTION: 'LDAP サーバーからユーザーを選択して Pentaho システム管理者の割り当てを行って下さい。',
+    LDAP_ADMINISTRATOR_ROLE_DESCRIPTION: 'LDAP サーバーからロールを選択して Pentaho システム管理者の割り当てを行って下さい。',
 
     //ldap configuration
-    LDAP_CONFIGURATION_TITLE: 'LDAP Configuration',
-    LDAP_CONFIGURATION_PROVIDER: 'LDAP Provider:',
-    LDAP_TYPE_SELECTOR_APACHE_OPTION_LABEL: 'Apache Directory Server',
-    LDAP_TYPE_SELECTOR_MICROSOFT_OPTION_LABEL: 'Microsoft Active Directory',
-    LDAP_TYPE_SELECTOR_CUSTOM_OPTION_LABEL: 'Custom Configuration',
+    LDAP_CONFIGURATION_TITLE: 'LDAP 構成',
+    LDAP_CONFIGURATION_PROVIDER: 'LDAP プロバイダー',
+    LDAP_TYPE_SELECTOR_APACHE_OPTION_LABEL: 'Apache ディレクトリ サーバー',
+    LDAP_TYPE_SELECTOR_MICROSOFT_OPTION_LABEL: 'Microsoft アクティブ ディレクトリ',
+    LDAP_TYPE_SELECTOR_CUSTOM_OPTION_LABEL: 'カスタム構成',
 
     //ldap apache configuration
-    LDAP_USER_BASE_LABEL: 'User Base:',
-    LDAP_USER_SEARCH_BASE_LABEL: 'Search Base:',
-    LDAP_USER_SEARCH_FILTER_LABEL: 'Search Filter:',
-    LDAP_GROUP_BASE_LABEL: 'Group Base: ',
+    LDAP_USER_BASE_LABEL: 'ユーザー ベース：',
+    LDAP_USER_SEARCH_BASE_LABEL: '検索ベース：',
+    LDAP_USER_SEARCH_FILTER_LABEL: '検索フィルター：',
+    LDAP_GROUP_BASE_LABEL: 'グループ ベース： ',
     LDAP_USER_BASE_DESCRIPTION: '',
-    LDAP_USER_SEARCH_BASE_DESCRIPTION: 'The Base (by username) for user searches.',
-    LDAP_USER_SEARCH_FILTER_DESCRIPTION: 'Filter (by username) for user searches. The attribute you specify here must contain the value that you want your users to log into Pentaho with.',
+    LDAP_USER_SEARCH_BASE_DESCRIPTION: 'ユーザー検索に対する (ユーザー名による) ベース',
+    LDAP_USER_SEARCH_FILTER_DESCRIPTION: 'ユーザー検索に対する (ユーザー名による) フィルターここで指定する属性には、ユーザーが Pentaho へログインをするのに用いることを望む値が含まれる必要があります。',
     LDAP_GROUP_BASE_DESCRIPTION: '',
 
     //ldap custom user search configuration
-    LDAP_USER_SEARCH_TITLE: 'User Search',
+    LDAP_USER_SEARCH_TITLE: 'ユーザー検索',
 
     //ldap custom roles configuration 
-    LDAP_ROLES_TITLE: 'Roles',
-    LDAP_ROLE_BASE_LABEL: 'Role Attribute:',
-    LDAP_ROLE_SEARCH_FILTER_LABEL: 'Role Search Filter:',
-    LDAP_ROLE_SEARCH_BASE_LABEL: 'Role Search Base:',
-    LDAP_ROLE_BASE_DESCRIPTION: 'The attribute used for role values',
-    LDAP_ROLE_SEARCH_FILTER_DESCRIPTION: 'Filter for "all roles" searches',
-    LDAP_ROLE_SEARCH_BASE_DESCRIPTION: 'Base for "all roles" searches',
+    LDAP_ROLES_TITLE: '役割',
+    LDAP_ROLE_BASE_LABEL: 'ロール属性：',
+    LDAP_ROLE_SEARCH_FILTER_LABEL: 'ロール検索フィルター：',
+    LDAP_ROLE_SEARCH_BASE_LABEL: 'ロール検索ベース：',
+    LDAP_ROLE_BASE_DESCRIPTION: 'ロール値に使用する属性',
+    LDAP_ROLE_SEARCH_FILTER_DESCRIPTION: '&quot;すべてのロール&quot; の検索に対するフィルター',
+    LDAP_ROLE_SEARCH_BASE_DESCRIPTION: '&quot;すべてのロール&quot; の検索に対するベース',
 
     //ldap custom populator configuration
-    LDAP_POPULATOR_TITLE: 'Populator',
-    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_LABEL: 'Group Role Attribute:',
-    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_DESCRIPTION: 'The attribute to get role names from.',
-    LDAP_POPULATOR_GROUP_SEARCH_BASE_LABEL: 'Group Search Base:',
-    LDAP_POPULATOR_GROUP_SEARCH_BASE_DESCRIPTION: 'Base (by user DN or username) for role searches.',
-    LDAP_POPULATOR_GROUP_SEARCH_FILTER_LABEL: 'Group Search Filter:',
-    LDAP_POPULATOR_GROUP_SEARCH_FILTER_DESCRIPTION: 'The filter to use when searching group objects.',
-    LDAP_POPULATOR_ROLE_PREFIX_LABEL: 'Role Prefix:',
-    LDAP_POPULATOR_ROLE_PREFIX_DESCRIPTION: 'A prefix to add to the beginning of the role name found in the group role attribute; the value can be an empty string.',
-    LDAP_POPULATOR_UPPERCASE_LABEL: 'Convert To Upper Case:',
-    LDAP_POPULATOR_UPPERCASE_DESCRIPTION: 'Indicates whether or not retrieved role names are converted to uppercase.',
-    LDAP_POPULATOR_SUBTREE_LABEL: 'Subtree:',
-    LDAP_POPULATOR_SUBTREE_DESCRIPTION: 'Indicates whether or not the search must include the current object and all children. If set to false, the search must include the current object only.',
+    LDAP_POPULATOR_TITLE: 'ポピュレーター',
+    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_LABEL: 'グループ ロール属性：',
+    LDAP_POPULATOR_GROUP_ROLE_ATTRIBUTE_DESCRIPTION: 'ロール名を取得する属性',
+    LDAP_POPULATOR_GROUP_SEARCH_BASE_LABEL: 'グループ検索ベース：',
+    LDAP_POPULATOR_GROUP_SEARCH_BASE_DESCRIPTION: 'ロール検索に対する (ユーザー DN または ユーザー名による) ベース',
+    LDAP_POPULATOR_GROUP_SEARCH_FILTER_LABEL: 'グループ検索フィルター：',
+    LDAP_POPULATOR_GROUP_SEARCH_FILTER_DESCRIPTION: 'グループ オブジェクトを検索する際に使用するフィルター',
+    LDAP_POPULATOR_ROLE_PREFIX_LABEL: 'ロール プレフィックス：',
+    LDAP_POPULATOR_ROLE_PREFIX_DESCRIPTION: 'グループ ロール属性内にロール名の最初に追加するプレフィックスを発見しました。値を空の文字列にすることも可能です。',
+    LDAP_POPULATOR_UPPERCASE_LABEL: '大文字に変換する：',
+    LDAP_POPULATOR_UPPERCASE_DESCRIPTION: '取得したロール名を大文字に変換する、しないを指定します。',
+    LDAP_POPULATOR_SUBTREE_LABEL: 'サブツリー：',
+    LDAP_POPULATOR_SUBTREE_DESCRIPTION: '検索が現在のオブジェクトおよびすべての子を含む必要があるかどうか指定するfalse に設定する場合、検索は現在のオブジェクトしか含みません。',
 
     //dialogs
-    LDAP_BROWSER_TITLE: 'LDAP Browser',
-    LDAP_WARNING: 'Warning',
-    LDAP_DIRTY_CHANGE: 'You have unsaved changes. Do you want to continue?',
-    LDAP_CONNECTOR_TEST: 'LDAP Connection',
-    LDAP_CONNECTOR_TESTING: 'Testing connection to LDAP server.',
-    LDAP_CONNECTOR_EDIT: 'Changing server conneciton will remove all current authentication and premissions settings. Do you want to continue?',
+    LDAP_BROWSER_TITLE: 'LDAP ブラウザー',
+    LDAP_WARNING: '警告',
+    LDAP_DIRTY_CHANGE: '未保存の変更があります。続行しますか？',
+    LDAP_CONNECTOR_TEST: 'LDAP 接続',
+    LDAP_CONNECTOR_TESTING: 'LDAP サーバーの接続テスト中です。',
+    LDAP_CONNECTOR_EDIT: 'サーバー接続を変更するとすべての現在の認証およびアクセス許可の設定が削除されます。続行しますか？',
 
-    LDAP_USER_TEST_DESCRIPTION: 'With the search base and search filter configuration search for a user name that exists in your LDAP server.',
-    LDAP_USER_TEST_LABEL: 'Search For User:',
-    LDAP_USER_TEST_SUCCESS_LABEL_PART1: 'Congratualtions. User',
-    LDAP_USER_TEST_SUCCESS_LABEL_PART2: 'was found on the LDAP server.',
-    LDAP_USER_TEST_ERROR_LABEL_PART1: 'Unable to find user',
-    LDAP_USER_TEST_ERROR_LABEL_PART2: 'on the LDAP server. Verify settings and try again.',
-    LDAP_USER_DOMAIN_LABEL: 'User DN:',
+    LDAP_USER_TEST_DESCRIPTION: '検索ベースおよび検索フィルター構成で LDAP サーバーに存在するユーザー名を検索します。',
+    LDAP_USER_TEST_LABEL: 'ユーザーを検索：',
+    LDAP_USER_TEST_SUCCESS_LABEL_PART1: 'おめでとうございます。ユーザー',
+    LDAP_USER_TEST_SUCCESS_LABEL_PART2: 'LDAP サーバーで発見されました。',
+    LDAP_USER_TEST_ERROR_LABEL_PART1: 'ユーザーを検出できませんでした。',
+    LDAP_USER_TEST_ERROR_LABEL_PART2: 'LDAP サーバー上にあります。設定を確認し、再試行してください。',
+    LDAP_USER_DOMAIN_LABEL: 'ユーザー DN:',
 
-    LDAP_POPULATOR_TEST: 'LDAP Populator Test',
-    LDAP_USER_TEST: 'LDAP User Test',
-    LDAP_ROLES_TEST: 'LDAP Roles Test',
-    LDAP_CONNECTOR_TEST_PASSED: 'Connection to the LDAP server was successful.',
-    LDAP_CONNECTOR_TEST_FAILED: 'Unable to connect to LDAP server. Verify settings and try again.',
+    LDAP_POPULATOR_TEST: 'LDAP ポピュレーター テスト',
+    LDAP_USER_TEST: 'LDAP ユーザーテスト',
+    LDAP_ROLES_TEST: 'LDAP ロール テスト',
+    LDAP_CONNECTOR_TEST_PASSED: 'LDAP サーバーへの接続は正常に行われました。',
+    LDAP_CONNECTOR_TEST_FAILED: 'LDAP サーバーへ接続できません。設定を確認し、再試行してください。',
 
-    SAVE: 'Save',
-    TEST: 'Test',
-    CANCEL: 'Cancel',
-    YES: 'Yes',
-    YES_CHANGE: 'Yes, Continue',
-    NO: 'No',
+    SAVE: '保存',
+    TEST: 'テスト',
+    CANCEL: 'キャンセル',
+    YES: 'はい',
+    YES_CHANGE: 'はい、続行します。',
+    NO: 'いいえ',
     OK: 'OK',
-    CLOSE: 'Close',
-    TEST_PASSED: 'Test Passed',
-    TEST_FAILED: 'Test Failed',
+    CLOSE: '閉じる',
+    TEST_PASSED: 'テスト成功',
+    TEST_FAILED: 'テスト失敗',
 
-    CONFIGURATION_SAVED: 'Changes to authentication method have been saved, however, your changes will not take effect until you restart the server.',
+    CONFIGURATION_SAVED: '認証メソッドに対する変更は保存されましたが、変更はサーバーを再起動するまで有効になりません。',
 
     //licenseManager
-    PRODUCT: 'Product',
-    START_DATE: 'Start Date',
-    END_DATE: 'End Date',
-    VERSION: 'Version',
-    LICENSES: 'Licenses',
-    DELETE_TITLE: 'Delete Selected License?',
-    DELETE_WARNING: 'You are about to delete the selected license. Do you want to continue?',
+    PRODUCT: '製品',
+    START_DATE: '日付を開始',
+    END_DATE: '日付を終了',
+    VERSION: 'バージョン',
+    LICENSES: 'ライセンス',
+    DELETE_TITLE: '選択されたライセンスを削除しますか?',
+    DELETE_WARNING: '選択されたライセンスを削除しようとしています。続行しますか？',
 
-    LICENSE_VALID_LICENSE_FOUND_LOG: 'Valid biserver-ee license found',
-    LICENSE_NO_VALID_LICENSE_FOUND_LOG: 'No valid biserver-ee license found',
-    LICENSE_NO_VALID_LICENSE_MESSAGE_HEADER: "Missing or expired license.",
-    LICENSE_NO_VALID_LICENSE_MESSAGE_BODY: 'To continue you must update your Pentaho BI Platform license. If you are not ready now you may <a href="%CONTEXT_PATH%\Logout" target="_top">log out</a> and come back later.',
-    LICENSE_CANCEL_BUTTON: 'Log Out',
-    LICENSE_OK_BUTTON: 'Ok'
+    LICENSE_VALID_LICENSE_FOUND_LOG: '有効な biserver-ee ライセンスが発見されました。',
+    LICENSE_NO_VALID_LICENSE_FOUND_LOG: '有効な biserver-ee ライセンスは発見されませんでした。',
+    LICENSE_NO_VALID_LICENSE_MESSAGE_HEADER: "存在しないもしくは期限切れのライセンス",
+    LICENSE_NO_VALID_LICENSE_MESSAGE_BODY: '続行するには Pentaho BI プラットフォーム ライセンスを更新する必要があります。準備完了でない場合は <a href="%CONTEXT_PATH%\Logout" target="_top">ログアウト</a> し、後でもう一度実行して下さい。',
+    LICENSE_CANCEL_BUTTON: 'ログアウト',
+    LICENSE_OK_BUTTON: 'OK',
+    LICENSE_ADD_LICENSE: 'ライセンスを追加',
+    LICENSE_DELETE_LICENSE: 'ライセンスを削除'
 
-}
+});
